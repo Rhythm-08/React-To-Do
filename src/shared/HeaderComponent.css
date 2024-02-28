@@ -1,0 +1,14 @@
+.header-color {
+    height: 100px;
+    background-color: #FFE9F3;
+    display: flex;
+    width: 100%;
+}
+
+.right-section {
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+}

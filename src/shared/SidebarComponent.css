@@ -1,0 +1,25 @@
+.sidebar-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-section,
+.history-section {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #FFD6E0;
+    margin-left: 10px;
+}
+
+.task-section:hover,
+.history-section:hover {
+    background-color: #e0e0e0;
+}

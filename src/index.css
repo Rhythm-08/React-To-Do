@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.body-section {
+  display: flex;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.sidebar-container {
+  flex: 1; /* Takes up 20% of the available space */
+}
+
+.main-content {
+  flex: 4; /* Takes up 80% of the available space */
+}
