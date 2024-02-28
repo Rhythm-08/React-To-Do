@@ -30,3 +30,50 @@
     }
 }
 
+.list {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #FFD3DA;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 40px;
+}
+
+.list-block{
+    margin: 10px;
+    background-color: white;
+    width: 500px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.task-name {
+    align-items: center;
+    display:flex;
+    font-size: 18px;
+    overflow: auto;
+}
+
+.task-delete {
+    background-color: #FF4B3E;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.task-complete {
+    background-color: #A5E6BA;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
