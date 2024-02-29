@@ -1,6 +1,16 @@
 {
-    "todoList" : [
-        
-    ]
-
+  "todoList": [
+    {
+      "id": "b213",
+      "data": "Complete ToDo List"
+    },
+    {
+      "id": "cac4",
+      "data": "learn react"
+    },
+    {
+      "id": "6b06",
+      "data": "learn fetch in react "
+    }
+  ]
 }
