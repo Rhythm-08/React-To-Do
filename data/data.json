@@ -2,15 +2,27 @@
   "todoList": [
     {
       "id": "b213",
-      "data": "Complete ToDo List"
+      "taskName": "Complete ToDo List",
+      "isCompleted": false,
+      "isDeleted": false
     },
     {
       "id": "cac4",
-      "data": "learn react"
+      "taskName": "learn react",
+      "isCompleted": false,
+      "isDeleted": true
     },
     {
       "id": "6b06",
-      "data": "learn fetch in react "
+      "taskName": "learn fetch in react ",
+      "isCompleted": true,
+      "isDeleted": false
+    },
+    {
+      "id": "f0df",
+      "taskName": "water park",
+      "isCompleted": true,
+      "isDeleted": false
     }
   ]
 }
