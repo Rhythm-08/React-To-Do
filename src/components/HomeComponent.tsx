@@ -5,6 +5,7 @@ interface HomeComponentProps {
     showHistory: boolean;
     showTasks: boolean;
 }
+
 const HomeComponent: React.FC<HomeComponentProps> = ({ showHistory, showTasks = true }) => {
     const [task, setTask] = useState('');
     const [toDoList, setToDoList] = useState<object[]>([]);;
@@ -15,8 +16,8 @@ const HomeComponent: React.FC<HomeComponentProps> = ({ showHistory, showTasks = 
         const objectModal = { taskName: task, isCompleted: false, isDeleted: false };
         await postData(objectModal);
         if (task.length) {
-            setToDoList((prevToDoList) => [...prevToDoList, objectModal]);
-            setTask('');
+            getToDoList();
+           
         }
     }
 
@@ -58,7 +59,7 @@ const HomeComponent: React.FC<HomeComponentProps> = ({ showHistory, showTasks = 
 
             const data = await response.json();
             // console.log('Requested data is here:', data);
-
+            setTask('');
             if (data && data.length > 0) {
                 setToDoList([...data]);
             }
@@ -68,6 +69,8 @@ const HomeComponent: React.FC<HomeComponentProps> = ({ showHistory, showTasks = 
     };
 
     const handleCompletedTask = async (data: any) => {
+        console.log(data);
+        
         const sendData = data;
         sendData['isCompleted'] = true;
         try {
@@ -147,9 +150,8 @@ const HomeComponent: React.FC<HomeComponentProps> = ({ showHistory, showTasks = 
                             <div key={index} >
                                 {data.isCompleted && !data?.isDeleted && <div className='list'>
                                     <div className='list-block'>
-                                        <button className='task-complete' type="button" onClick={() => handleCompletedTask(data)}>Mark Complete</button>
-                                        <span className='task-name'>{data?.taskName}</span>
-                                        <button className='task-delete' type="button" onClick={() => handleDeletedTask(data)}>Delete</button>
+                                        <span className='task-name'>
+                                          {data?.taskName}</span>
                                     </div>
                                 </div>}
                             </div>

@@ -1,28 +1,22 @@
 {
   "todoList": [
     {
-      "id": "b213",
-      "taskName": "Complete ToDo List",
-      "isCompleted": false,
+      "id": "ed19",
+      "taskName": "Learn Angular",
+      "isCompleted": true,
       "isDeleted": false
     },
     {
-      "id": "cac4",
-      "taskName": "learn react",
+      "id": "dbbf",
+      "taskName": "Learn Vue",
+      "isCompleted": true,
+      "isDeleted": false
+    },
+    {
+      "id": "1515",
+      "taskName": "Learn React",
       "isCompleted": false,
       "isDeleted": true
-    },
-    {
-      "id": "6b06",
-      "taskName": "learn fetch in react ",
-      "isCompleted": true,
-      "isDeleted": false
-    },
-    {
-      "id": "f0df",
-      "taskName": "water park",
-      "isCompleted": true,
-      "isDeleted": false
     }
   ]
 }
